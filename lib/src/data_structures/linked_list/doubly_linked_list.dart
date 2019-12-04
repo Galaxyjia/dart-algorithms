@@ -137,5 +137,5 @@ class DoublyNode<T> {
   DoublyNode next;
   DoublyNode prev;
 
-  DoublyNode([this.element]);
+  DoublyNode(this.element);
 }
