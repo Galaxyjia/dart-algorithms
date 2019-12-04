@@ -1,4 +1,4 @@
-import 'package:dart_algorithms/src/data_structures/stack/stack.dart';
+import 'stack.dart';
 
 // convert decimal number to any base
 baseConverter(int decimalNumber, int base) {

@@ -110,6 +110,16 @@ class DoublyLinkedList<T> {
     return removeAt(index);
   }
 
+  void removeAll(){
+    while(this.head!=null){
+      var element = head;
+      head = head.next;
+      element.prev = null;
+      element.next = null;
+    }
+    tail = null;
+  }
+
   String toString() {
     var current = head;
     var string = '';
@@ -119,6 +129,7 @@ class DoublyLinkedList<T> {
     }
     return string;
   }
+
 }
 
 class DoublyNode<T> {
