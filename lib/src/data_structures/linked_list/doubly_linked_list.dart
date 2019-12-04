@@ -120,7 +120,7 @@ class DoublyLinkedList<T> {
     tail = null;
   }
 
-  String toString() {
+  String toString(){
     var current = head;
     var string = '';
     while (current != null) {
@@ -137,5 +137,5 @@ class DoublyNode<T> {
   DoublyNode next;
   DoublyNode prev;
 
-  DoublyNode(this.element);
+  DoublyNode([this.element]);
 }
